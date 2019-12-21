@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="unisInBG">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="universityList" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="university" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="uniInformation">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="name" type="xs:string"/>
+                                                    <xs:element name="branchName" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="location" type="xs:string"/>
+													<xs:element name="region" type="xs:string"/>
+                                                    <xs:element name="id" type="xs:integer" />
+													<xs:element name="regionId" type="xs:integer"/>
+                                                    <xs:element name="telephone" type="xs:string"/>
+                                                    <xs:element name="telephoneExtra" type="xs:string" minOccurs="0"/>
+													<xs:element name="year" type="xs:integer"/>
+													<xs:element name="students" type="xs:integer" minOccurs="0"/>
+                                                    <xs:element name="site" minOccurs="0">
+														<xs:complexType>
+														  <xs:simpleContent>
+															<xs:extension base="xs:string">
+															  <xs:attribute ref="href" use="optional"/>
+															</xs:extension>
+														  </xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="facultyList">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="faculty" type="xs:string" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="branchList" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="branch" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+										<xs:element name="seatName" type="xs:string"/>
+                                        <xs:element name="uni" maxOccurs="1">
+                                             <xs:complexType>
+												<xs:simpleContent>
+												  <xs:extension base="xs:string">
+													<xs:attribute type="xs:string" name="nameRef" />
+													<xs:attribute type="xs:integer" name="idRef" />
+												  </xs:extension>
+												</xs:simpleContent>
+											 </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+				<xs:element name="regionList" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="regionInfo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+										<xs:element name="regionName" type="xs:string"/>
+                                        <xs:element name="reg" maxOccurs="1">
+                                             <xs:complexType>
+												<xs:simpleContent>
+												  <xs:extension base="xs:string">
+													<xs:attribute type="xs:string" name="regRef" />
+													<xs:attribute type="xs:integer" name="regIdRef" />
+												  </xs:extension>
+												</xs:simpleContent>
+											 </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="branchKey">
+            <xs:selector xpath="unisInBG/universityList/university/uniInformation"/>
+            <xs:field xpath="name"/>
+            <xs:field xpath="id"/>
+        </xs:key>
+        <xs:keyref name="branchRef" refer="branchKey">
+            <xs:selector xpath="unisInBG/branchList/branch/uni"/>
+            <xs:field xpath="@nameRef"/>
+            <xs:field xpath="@idRef"/>
+        </xs:keyref>
+	<xs:key name="regionKey">
+            <xs:selector xpath="unisInBG/universityList/university/uniInformation"/>
+            <xs:field xpath="region"/>
+            <xs:field xpath="regionId"/>
+        </xs:key>
+        <xs:keyref name="regionRef" refer="regionKey">
+            <xs:selector xpath="unisInBG/regionList/regionInfo/reg"/>
+            <xs:field xpath="@regRef"/>
+            <xs:field xpath="@regIdRef"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

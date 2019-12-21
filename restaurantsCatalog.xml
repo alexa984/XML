@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="universityCatXslt.xsl"?>
+<unisInBG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="universityCatScheme.xsd">
+	<universityList>
+		<university>
+				<uniInformation>
+					 <name>Софийски университет "Св. Климент Охридски"</name>
+					 <location>София</location>
+					 <region>Югозападен регион</region>
+					 <id>1</id>
+					 <regionId>206</regionId>
+					 <telephone>02/930-8577</telephone>
+					 <telephoneExtra>02/816-1500</telephoneExtra>
+					 <year>1888</year>
+					 <students>23769</students>
+					 <site href="https://www.uni-sofia.bg/">www.uni-sofia.bg</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Исторически факултет</faculty>
+					<faculty>Философски факултет</faculty>
+					<faculty>Факултет по класически и нови филологии</faculty>
+					<faculty>Факултет по славянски филологии</faculty>
+					<faculty>Юридически факултет</faculty>
+					<faculty>Факултет по педагогика</faculty>
+					<faculty>Факултет по начална и предучилищна педагогика</faculty>
+					<faculty>Факултет по журналистика и масова комуникация</faculty>
+					<faculty>Богословски факултет</faculty>
+					<faculty>Стопански факултет</faculty>
+					<faculty>Факултет по математика и информатика</faculty>
+					<faculty>Физически факултет</faculty>
+					<faculty>Факултет по химия и фармация</faculty>
+					<faculty>Биологически факултет</faculty>
+					<faculty>Геолого-географски факултет</faculty>
+					<faculty>Медицински факултет</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Технически университет - София</name>
+					 <location>София</location>
+					 <region>Югозападен регион</region>
+					 <id>2</id>
+					 <regionId>206</regionId>
+					 <telephone>02/965-2844</telephone>
+					 <telephoneExtra>02/965-2845</telephoneExtra>
+					 <year>1953</year>
+					 <students>12885</students>
+					 <site href="https://tu-sofia.bg/">www.tu-sofia.bg</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет по автоматика</faculty>
+					<faculty>Електротехнически факултет</faculty>
+					<faculty>Енергомашиностроителен факултет</faculty>
+					<faculty>Машинно-технологичен факултет</faculty>
+					<faculty>Машиностроителен факултет</faculty>
+					<faculty>Факултет по електронна техника и технологии</faculty>
+					<faculty>Факултет по телекомуникации</faculty>
+					<faculty>Факултет по компютърни системи и технологии</faculty>
+					<faculty>Факултет по транспорта</faculty>
+					<faculty>Стопански факултет</faculty>
+					<faculty>Факултет по приложна математика и информатика</faculty>
+					<faculty>Факултет за германско инженерно обучение и промишленост</faculty>
+					<faculty>Факултет за френско обучение по електроинженерство</faculty>
+					<faculty>Факултет за английско инженерно обучение</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Технически университет - София</name>
+					 <branchName>Филиал Пловдив</branchName>
+					 <location>Пловдив</location>
+					 <region>Южен централен регион</region>
+					 <id>21</id>
+					 <regionId>205</regionId>
+					 <telephone>032/659-559</telephone>
+					 <year>1986</year>
+					 <site href="http://www.tu-plovdiv.bg/">www.tu-plovdiv.bg</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет по електроника и автоматика</faculty>
+					<faculty>Факултет по машиностроене и уредостроене</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Технически университет - София</name>
+					 <branchName>Филиал Сливен</branchName>
+					 <location>Сливен</location>
+					 <region>Югоизточен регион</region>
+					 <id>22</id>
+					 <regionId>204</regionId>
+					 <telephone>044/667-552</telephone>
+					 <telephoneExtra>044/667-128</telephoneExtra>
+					 <year>1986</year>
+					 <site href="http://www.tu-sliven.com/">www.tu-sliven.com</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Инженерно-педагогически факултет</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Национална академия за театрално и филмово изкуство "Кръстьо Сарафов"</name>
+					 <location>София</location>
+					 <region>Югозападен регион</region>
+					 <id>3</id>
+					 <regionId>206</regionId>
+					 <telephone>02/923-1225</telephone>
+					 <telephoneExtra>02/923-1223</telephoneExtra>
+					 <year>1948</year>
+					 <students>540</students>
+					 <site href="http://natfiz.bg/">www.natfiz.bg</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет "Сценични изкуства"</faculty>
+					<faculty>Факултет "Екранни изкуства"</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Американски университет в България</name>
+					 <location>Благоевград</location>
+					 <region>Югозападен регион</region>
+					 <id>4</id>
+					 <regionId>206</regionId>
+					 <telephone>073/888-111</telephone>
+					 <year>1991</year>
+					 <students>1338</students>
+					 <site href="https://www.aubg.edu/bg-admissions">www.aubg.edu</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет по изкуства, езици и литература</faculty>
+					<faculty>Бизнес факултет</faculty>
+					<faculty>Факултет по компютърни науки и информационни системи</faculty>
+					<faculty>Факултет по икономика</faculty>
+					<faculty>Факултет по история и цивилизация</faculty>
+					<faculty>Факултет по журналистика и масова комуникация</faculty>
+					<faculty>Факултет по математика и науки</faculty>
+					<faculty>Факултет по политически и европейски науки</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Пловдивски университет "Паисий Хилендарски"</name>
+					 <location>Пловдив</location>
+					 <region>Южен централен регион</region>
+					 <id>5</id>
+					 <regionId>205</regionId>
+					 <telephone>032/261-261</telephone>
+					 <telephoneExtra>032/261-303</telephoneExtra>
+					 <year>1961</year>
+					 <students>17825</students>
+					 <site href="https://uni-plovdiv.bg/">www.uni-plovdiv.bg</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Биологически факултет</faculty>
+					<faculty>Факултет по икономически и социални науки</faculty>
+					<faculty>Факултет по математика и информатика</faculty>
+					<faculty>Философски факултет</faculty>
+					<faculty>Педагогически факултет</faculty>
+					<faculty>Физически факултет</faculty>
+					<faculty>Филологически факултет</faculty>
+					<faculty>Философско-исторически факултет</faculty>
+					<faculty>Химически факултет</faculty>
+					<faculty>Юридически факултет</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Пловдивски университет "Паисий Хилендарски"</name>
+					 <branchName>Филиал Смолян</branchName>
+					 <location>Смолян</location>
+					 <region>Южен централен регион</region>
+					 <id>51</id>
+					 <regionId>205</regionId>
+					 <telephone>0301/623-39</telephone>
+					 <year>1962</year>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет по филологически и педагогически науки</faculty>
+					<faculty>Факултет по природоматематически и стопански науки</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Пловдивски университет "Паисий Хилендарски"</name>
+					 <branchName>Филиал Кърджали</branchName>
+					 <location>Кърджали</location>
+					 <region>Южен централен регион</region>
+					 <id>52</id>
+					 <regionId>205</regionId>
+					 <telephone>0361/623-52</telephone>
+					 <year>1996</year>
+					 <site href="http://www.uni-kardzhali.com/">www.uni-kardzhali.com</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет по хуманитарни и стопански науки</faculty>
+					<faculty>Факултет по педагогически и природоматематически науки</faculty>
+				</facultyList>
+		 </university>
+		  <university>
+				<uniInformation>
+					 <name>Тракийски университет Стара Загора</name>
+					 <location>Стара Загора</location>
+					 <region>Югоизточен регион</region>
+					 <id>6</id>
+					 <regionId>204</regionId>
+					 <telephone>042/672-009</telephone>
+					 <year>1995</year>
+					 <students>5677</students>
+					 <site href="http://uni-sz.bg/">www.uni-sz.bg</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Аграрен факултет</faculty>
+					<faculty>Ветеринарномедицински факултет</faculty>
+					<faculty>Медицински факултет</faculty>
+					<faculty>Педагогически факултет</faculty>
+					<faculty>Стопански факултет</faculty>
+					<faculty>Факултет "Техника и технологии"</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Тракийски университет Стара Загора</name>
+					 <branchName>Филиал Хасково</branchName>
+					 <location>Хасково</location>
+					 <region>Южен централен регион</region>
+					 <id>61</id>
+					 <regionId>205</regionId>
+					 <telephone>038/664-375</telephone>
+					 <year>1997</year>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет "Здравни грижи"</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Тракийски университет Стара Загора</name>
+					 <branchName>Филиал Ямбол</branchName>
+					 <location>Ямбол</location>
+					 <region>Югоизточен регион</region>
+					 <id>62</id>
+					 <regionId>204</regionId>
+					 <telephone>046/669-183</telephone>
+					 <year>2011</year>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет "Техника и технологии"</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Шуменски университет "Епископ Константин Преславски"</name>
+					 <location>Шумен</location>
+					 <region>Североизточен регион</region>
+					 <id>7</id>
+					 <regionId>203</regionId>
+					 <telephone>054/830-350</telephone>
+					 <telephoneExtra>054/832-106</telephoneExtra>
+					 <year>1971</year>
+					 <students>7161</students>
+					 <site href="http://shu-bg.net/">www.shu-bg.net</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет по хуманитарни науки</faculty>
+					<faculty>Факултет по природни науки</faculty>
+					<faculty>Факултет по математика и информатика</faculty>
+					<faculty>Педагогически факултет</faculty>
+					<faculty>Факултет по технически науки</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Шуменски университет "Епископ Константин Преславски"</name>
+					  <branchName>Филиал Добрич</branchName>
+					 <location>Добрич</location>
+					 <region>Североизточен регион</region>
+					 <id>71</id>
+					 <regionId>203</regionId>
+					 <telephone>058/602-778</telephone>
+					 <telephoneExtra>058/603-209</telephoneExtra>
+					 <year>1972</year>
+					 <site href="http://k-dobrich.shu.bg/">www.k-dobrich.shu.bg</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет по математика и информатика</faculty>
+					<faculty>Факултет по начална и предучилищна педагогика</faculty>
+					<faculty>Факултет по растениевъдство и растителна защита</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Висше военноморско училище "Никола Вапцаров"</name>
+					 <location>Варна</location>
+					 <region>Североизточен регион</region>
+					 <id>8</id>
+					 <regionId>203</regionId>
+					 <telephone>052/632-015</telephone>
+					 <telephoneExtra>052/552-222</telephoneExtra>
+					 <year>1942</year>
+					 <students>2138</students>
+					 <site href="http://www.naval-acad.bg/">www.naval-acad.bg</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет "Навигационен"</faculty>
+					<faculty>Факултет "Инженерен"</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Русенски университет "Ангел Кънчев"</name>
+					 <location>Русе</location>
+					 <region>Северен централен регион</region>
+					 <id>9</id>
+					 <regionId>202</regionId>
+					 <telephone>082/888-465</telephone>
+					 <telephoneExtra>082/888-467</telephoneExtra>
+					 <year>1945</year>
+					 <students>9349</students>
+					 <site href="https://www.uni-ruse.bg/">www.uni-ruse.bg</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Аграрно-индустриален факултет</faculty>
+					<faculty>Машинно-технологичен факултет</faculty>
+					<faculty>Факултет по електротехника, електроника и автоматика</faculty>
+					<faculty>Транспортен факултет</faculty>
+					<faculty>Факултет по бизнес мениджмънт</faculty>
+					<faculty>Факултет по природни науки и образование</faculty>
+					<faculty>Юридически факултет</faculty>
+					<faculty>Факултет по обществено здраве и здравни грижи</faculty>
+				</facultyList>
+		 </university>
+		  <university>
+				<uniInformation>
+					 <name>Русенски университет "Ангел Кънчев"</name>
+					  <branchName>Филиал Силистра</branchName>
+					 <location>Силистра</location>
+					 <region>Северен централен регион</region>
+					 <id>91</id>
+					 <regionId>202</regionId>
+					 <telephone>086/821-521</telephone>
+					 <year>1997</year>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет по филологически и природни науки</faculty>
+				</facultyList>
+		 </university>
+		  <university>
+				<uniInformation>
+					 <name>Русенски университет "Ангел Кънчев"</name>
+					  <branchName>Филиал Разград</branchName>
+					 <location>Разград</location>
+					 <region>Северен централен регион</region>
+					 <id>92</id>
+					 <regionId>202</regionId>
+					 <telephone>084/266-067</telephone>
+					 <telephoneExtra>084/266-063</telephoneExtra>
+					 <year>2008</year>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет по биотехнологии и хранителни технологии</faculty>
+					<faculty>Факултет по химия и химични технологии</faculty>
+				</facultyList>
+		 </university>
+		 <university>
+				<uniInformation>
+					 <name>Медицински университет - Плевен</name>
+					 <location>Плевен</location>
+					 <region>Северен централен регион</region>
+					 <id>10</id>
+					 <regionId>201</regionId>
+					 <telephone>064/884-101</telephone>
+					 <telephoneExtra>064/800-728</telephoneExtra>
+					 <year>1974</year>
+					 <students>1458</students>
+					 <site href="http://www.mu-pleven.bg/">www.mu-pleven.bg</site>
+				</uniInformation>
+				<facultyList>
+					<faculty>Факултет "Медицина"</faculty>
+					<faculty>Факултет "Фармация"</faculty>
+					<faculty>Факултет "Обществено здраве"</faculty>
+					<faculty>Факултет "Здравни грижи"</faculty>
+				</facultyList>
+		 </university>
+	</universityList>
+	<branchList>
+		<branch>
+			<seatName>Технически университет - София</seatName>
+			<uni nameRef="Технически университет - София" idRef="2"/>
+		</branch>
+		<branch>
+			<seatName>Пловдивски университет "Паисий Хилендарски"</seatName>
+			<uni nameRef="Пловдивски университет &quot;Паисий Хилендарски&quot;" idRef="5"/>
+		</branch>
+		<branch>
+			<seatName>Тракийски университет Стара Загора</seatName>
+			<uni nameRef="Тракийски университет Стара Загора" idRef="6"/>
+		</branch>
+		<branch>
+			<seatName>Шуменски университет "Епископ Константин Преславски"</seatName>
+			<uni nameRef="Шуменски университет &quot;Епископ Константин Преславски&quot;" idRef="7"/>
+		</branch>
+		<branch>
+			<seatName>Русенски университет "Ангел Кънчев"</seatName>
+			<uni nameRef="Русенски университет &quot;Ангел Кънчев&quot;" idRef="9"/>
+		</branch>
+	</branchList>
+	<regionList>
+		<regionInfo>
+			<regionName>Северозападен регион</regionName>
+			<reg regRef="Северозападен регион" regIdRef="201"/>
+		</regionInfo>
+		<regionInfo>
+			<regionName>Северен централен регион</regionName>
+			<reg regRef="Северен централен регион" regIdRef="202"/>
+		</regionInfo>
+		<regionInfo>
+			<regionName>Североизточен регион</regionName>
+			<reg regRef="Североизточен регион" regIdRef="203"/>
+		</regionInfo>
+		<regionInfo>
+			<regionName>Югоизточен регион</regionName>
+			<reg regRef="Югоизточен регион" regIdRef="204"/>
+		</regionInfo>
+		<regionInfo>
+			<regionName>Южен централен регион</regionName>
+			<reg regRef="Южен централен регион" regIdRef="205"/>
+		</regionInfo>
+		<regionInfo>
+			<regionName>Югозападен регион</regionName>
+			<reg regRef="Югозападен регион" regIdRef="206"/>
+		</regionInfo>
+	</regionList>	
+</unisInBG>
