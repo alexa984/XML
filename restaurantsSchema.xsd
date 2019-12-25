@@ -85,6 +85,7 @@
 						</sequence>
 					</complexType>
 				</element>
+				<!-- TODO: check hot to correctly reference cities and chains -->
 				<element name="cityList" maxOccurs="1">
 					<complexType>
 						<sequence>
