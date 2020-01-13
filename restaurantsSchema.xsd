@@ -12,7 +12,7 @@
                     <xs:element name="id" type="xs:integer" />
                     <xs:element name="name" type="xs:string" />
                     <xs:element name="chainName" type="xs:string" minOccurs="0" />
-                    <xs:element name="chainId" type="xs:integer" />
+                    <xs:element name="chainId" type="xs:integer" minOccurs="0"/>
                     <xs:element name="city" type="xs:string" />
                     <xs:element name="cityId" type="xs:integer" />
                     <xs:element name="address" type="xs:string" />
