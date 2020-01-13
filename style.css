@@ -1,6 +1,23 @@
+@font-face {
+	font-family: 'CaviarDreamsRegular';
+	src: url('./CaviarDreams.ttf');
+}
+@font-face {
+	font-family: 'CaviarDreamsItalic';
+	src: url('./CaviarDreams_Italic.ttf');
+}
+@font-face {
+	font-family: 'CaviarDreamsBold';
+	src: url('./CaviarDreams_Bold.ttf');
+}
+@font-face {
+	font-family: 'CaviarDreamsBoldItalic';
+	src: url('./CaviarDreams_BoldItalic.ttf');
+}
+
 body {
-    background-color: #a3c2db;
-	font-family: Times New Roman;
+    background-color: #F1F1F1;
+	font-family: CaviarDreamsRegular;
 }
 
 h1{
