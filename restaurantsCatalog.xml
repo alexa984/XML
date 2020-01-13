@@ -1,287 +1,265 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="restaurantsXSLT.xsl"?>
 <restaurantsInBG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="restaurantsSchema.xsd">
-	<restaurantList>
-		<restaurant>
-			<restaurantInformation>
-				<id>1</id>
-				<name>SPAGHETTI COMPANY, БЪЛГАРИЯ МОЛ</name>
-				<chainName>SPAGHETTI COMPANY</chainName>
-				<chainId>1</chainId>
-				<city>София</city>
-				<cityId>1</cityId>
-				<address>бул. България 69, последен етаж</address>
-				<phone>02 9950 950</phone>
-				<website href="https://spaghetti-company.com/">https://spaghetti-company.com/</website>
-				<numSeats>160</numSeats>
-				<priceCategory>$$</priceCategory>
-				<types>
-          <type>Италианска</type>
-          <type>Българска</type>
-          <type>Гурме</type>
-          <type>Европейска</type>
-          <type>Средиземноморска</type>
-				</types>
-				<services>
-          <service>Wi Fi</service>
-          <service>Паркинг</service>
-          <service>Безкасово плащане</service>
-          <service>Климатик</service>
-          <service>Градина/ тераса</service>
-				</services>
-			</restaurantInformation>
-		</restaurant>
-		<restaurant>
-			<restaurantInformation>
-				<id>2</id>
-				<name>La Terrazza di Serdica</name>
-				<city>София</city>
-				<cityId>1</cityId>
-				<address>ул. "Будапеща" 2-4, хотел АРЕНА ДИ СЕРДИКА</address>
-				<phone>088 689 8905</phone>
-				<website href="https://www.arenadiserdica.com/bg/restaurants-services/panoramen-restorant-la-terrazza-di-serdica-sofiya?fbclid=IwAR1-ozOmXtWq3S9OrGYkGcqrcX-UW95JONOryc_2QlybydXtAj7nVL8Ryo0"></website>
-				<numSeats>65</numSeats>
-				<priceCategory>$$$</priceCategory>
-				<types>
-          <type>Италианска</type>
-				</types>
-				<services>
-          <service>Wi Fi</service>
-          <service>Паркинг</service>
-          <service>Безкасово плащане</service>
-          <service>Климатик</service>
-          <service>Градина/ тераса</service>
-				</services>
-			</restaurantInformation>
-		</restaurant>
-		<restaurant>
-			<restaurantInformation>
-				<id>3</id>
-				<name>SPAGHETTI COMPANY Бул. "Витоша"</name>
-				<chainName>SPAGHETTI COMPANY</chainName>
-				<chainId>1</chainId>
-				<city>София</city>
-				<cityId>1</cityId>
-				<address>бул. "Витоша" 150</address>
-				<phone>02 88 10 100</phone>
-				<website href="http://spaghetti-company.com/bg/"></website>
-				<numSeats>80</numSeats>
-				<priceCategory>$$</priceCategory>
-				<types>
-          <type>Италианска</type>
-          <type>Българска</type>
-          <type>Гурме</type>
-          <type>Европейска</type>
-          <type>Средиземноморска</type>
-				</types>
-				<services>
-          <service>Wi Fi</service>
-          <service>Паркинг</service>
-          <service>Безкасово плащане</service>
-          <service>Климатик</service>
-          <service>Градина/ тераса</service>
-				</services>
-			</restaurantInformation>
-		</restaurant>
-		<restaurant>
-			<restaurantInformation>
-				<id>4</id>
-				<name>GUSTO Ristorante &amp; Pizza</name>
-				<city>Пловдив</city>
-				<cityId>2</cityId>
-				<address>ул. "Отец Паисий" 26</address>
-				<phone>032 623 711</phone>
-				<website href="http://www.gustobg.com/"></website>
-				<numSeats>100</numSeats>
-				<priceCategory>$$</priceCategory>
-				<types>
-          <type>Италианска</type>
-          <type>Българска</type>
-          <type>Европейска</type>
-				</types>
-				<services>
-          <service>Wi Fi</service>
-          <service>Паркинг</service>
-          <service>Безкасово плащане</service>
-          <service>Климатик</service>
-          <service>Градина/ тераса</service>
-				</services>
-			</restaurantInformation>
-		</restaurant>
-		<restaurant>
-			<restaurantInformation>
-				<id>5</id>
-				<name>ЗЛАТНА РИБКА</name>
-				<city>Бургас</city>
-				<cityId>3</cityId>
-				<address>ул. "Цар Симеон І " 3</address>
-				<phone>088 986 5555</phone>
-				<website href="">
-				</website>
-				<numSeats>120</numSeats>
-				<priceCategory>$$</priceCategory>
-        <types>
-          <type>Италианска</type>
-          <type>Българска</type>
-          <type>Гурме</type>
-          <type>Европейска</type>
-          <type>Средиземноморска</type>
-          <type>Рибни специалитети</type>
-          <type>Стек Специалитети</type>
-        </types>
-        <services>
-          <service>Wi Fi</service>
-          <service>Паркинг</service>
-          <service>Безкасово плащане</service>
-          <service>Климатик</service>
-          <service>Градина/ тераса</service>
-        </services>
-			</restaurantInformation>
-		</restaurant>
-		<restaurant>
-			<restaurantInformation>
-				<id>6</id>
-				<name>НЕПТУН</name>
-				<city>Бургас</city>
-				<cityId>3</cityId>
-				<address>Централен плаж</address>
-				<phone>087 810 1788</phone>
-				<website href="http://www.neptunburgas.com/"></website>
-				<numSeats>140</numSeats>
-				<priceCategory>$$</priceCategory>
-				<types>
-          <type>Българска</type>
-          <type>Европейска</type>
-          <type>Средиземноморска</type>
-          <type>Рибни специалитети</type>
-				</types>
-				<services>
-          <service>Wi Fi</service>
-          <service>Паркинг</service>
-          <service>Климатик</service>
-          <service>Детски кът</service>
-				</services>
-			</restaurantInformation>
-		</restaurant>
-		<restaurant>
-			<restaurantInformation>
-				<id>7</id>
-				<name>Bar &amp; Gelato RAFFY Тракия Пловдив</name>
-				<chainName>RAFFY</chainName>
-				<chainId>2</chainId>
-				<city>Пловдив</city>
-				<cityId>2</cityId>
-				<address>ул. "Съединение" 51А, Тракия</address>
-				<phone>088 355 5589</phone>
-				<website href="https://raffyplovdiv.bg/"></website>
-				<numSeats>500</numSeats>
-				<priceCategory>$$</priceCategory>
-				<types>
-          <type>Българска</type>
-          <type>Италианска</type>
-          <type>Европейска</type>
-          <type>Суши</type>
-				</types>
-				<services>
-          <service>Wi Fi</service>
-          <service>Паркинг</service>
-          <service>Безкасово плащане</service>
-          <service>Климатик</service>
-          <service>Градина/ тераса</service>
-          <service>Жива музика/ DJ</service>
-				</services>
-			</restaurantInformation>
-		</restaurant>
-		<restaurant>
-			<restaurantInformation>
-				<id>8</id>
-				<name>RAFFY Bar &amp; Gelato Благоевград</name>
-				<chainName>RAFFY</chainName>
-				<chainId>2</chainId>
-				<city>Благоевград</city>
-				<cityId>4</cityId>
-				<address>ул. "Тракия" 1</address>
-				<phone>089 671 6132</phone>
-				<website href="http://www.raffy.bg/bg/raffy-bar-and-gelato-blagoevgrad"></website>
-				<numSeats>120</numSeats>
-				<priceCategory>$$</priceCategory>
-				<types>
-          <type>Българска</type>
-          <type>Италианска</type>
-          <type>Средиземноморска</type>
-          <type>Европейска</type>
-          <type>Суши</type>
-				</types>
-				<services>
-          <service>Wi Fi</service>
-          <service>Безкасово плащане</service>
-          <service>Климатик</service>
-          <service>Жива музика/ DJ</service>
-				</services>
-			</restaurantInformation>
-		</restaurant>
-		<restaurant>
-			<restaurantInformation>
-				<id>9</id>
-				<name>Bar &amp; Dinner BESO</name>
-				<city>София</city>
-				<cityId>1</cityId>
-				<address>ул. „Тодор Каблешков“ 45</address>
-				<phone>089 922 2444</phone>
-				<website href="https://beso.bg/"></website>
-				<numSeats>550</numSeats>
-				<priceCategory>$$</priceCategory>
-        <types>
-          <type>Българска</type>
-          <type>Рибни специалитети</type>
-          <type>Стек Специалитети</type>
-          <type>Суши</type>
-          <type>BBQ</type>
-				</types>
-				<services>
-          <service>Wi Fi</service>
-          <service>Паркинг</service>
-          <service>Безкасово плащане</service>
-          <service>Климатик</service>
-          <service>Градина/ тераса</service>
-          <service>Жива музика/ DJ</service>
-				</services>
-			</restaurantInformation>
-		</restaurant>
-		<restaurant>
-			<restaurantInformation>
-				<id>10</id>
-				<name>SOCIAL CAFE BAR &amp; KITCHEN</name>
-        <chainName>SOCIAL CAFE</chainName>
-        <chainId>3</chainId>
-				<city>София</city>
-				<cityId>1</cityId>
-				<address>бул. "Витоша" 16</address>
-				<phone>087 676 7647</phone>
-				<website href="http://socialcafe.bg/"></website>
-				<numSeats>250</numSeats>
-				<priceCategory>$$</priceCategory>
-				<types>
-          <type>Българска</type>
-          <type>Италианска</type>
-          <type>Европейска</type>
-				</types>
-				<services>
-          <service>Wi Fi</service>
-          <service>Паркинг</service>
-          <service>Безкасово плащане</service>
-          <service>Климатик</service>
-          <service>Градина/ тераса</service>
-          <service>Жива музика/ DJ</service>
-				</services>
-			</restaurantInformation>
-		</restaurant>
-	</restaurantList>
-	<chainList>
-		<chain>
-			<chainName>SPAGHETTI COMPANY</chainName>
-			<chainRef nameRef="SPAGHETTI COMPANY" idRef="1" />
-		</chain>
+  <restaurantList>
+    <restaurant>
+      <id>1</id>
+      <name>SPAGHETTI COMPANY, БЪЛГАРИЯ МОЛ</name>
+      <chainName>SPAGHETTI COMPANY</chainName>
+      <chainId>1</chainId>
+      <city>София</city>
+      <cityId>1</cityId>
+      <address>бул. България 69, последен етаж</address>
+      <phone>02 9950 950</phone>
+      <website href="https://spaghetti-company.com/">https://spaghetti-company.com/</website>
+      <numSeats>160</numSeats>
+      <priceCategory>$$</priceCategory>
+      <types>
+        <type>Италианска</type>
+        <type>Българска</type>
+        <type>Гурме</type>
+        <type>Европейска</type>
+        <type>Средиземноморска</type>
+      </types>
+      <services>
+        <service>Wi Fi</service>
+        <service>Паркинг</service>
+        <service>Безкасово плащане</service>
+        <service>Климатик</service>
+        <service>Градина/ тераса</service>
+      </services>
+    </restaurant>
+    <restaurant>
+      <id>2</id>
+      <name>La Terrazza di Serdica</name>
+      <city>София</city>
+      <cityId>1</cityId>
+      <address>ул. "Будапеща" 2-4, хотел АРЕНА ДИ СЕРДИКА</address>
+      <phone>088 689 8905</phone>
+      <website href="https://www.arenadiserdica.com/bg/restaurants-services/panoramen-restorant-la-terrazza-di-serdica-sofiya">https://www.arenadiserdica.com/bg/restaurants-services/panoramen-restorant-la-terrazza-di-serdica-sofiya</website>
+      <numSeats>65</numSeats>
+      <priceCategory>$$$</priceCategory>
+      <types>
+        <type>Италианска</type>
+      </types>
+      <services>
+        <service>Wi Fi</service>
+        <service>Паркинг</service>
+        <service>Безкасово плащане</service>
+        <service>Климатик</service>
+        <service>Градина/ тераса</service>
+      </services>
+    </restaurant>
+    <restaurant>
+      <id>3</id>
+      <name>SPAGHETTI COMPANY Бул. "Витоша"</name>
+      <chainName>SPAGHETTI COMPANY</chainName>
+      <chainId>1</chainId>
+      <city>София</city>
+      <cityId>1</cityId>
+      <address>бул. "Витоша" 150</address>
+      <phone>02 88 10 100</phone>
+      <website href="http://spaghetti-company.com/bg/">http://spaghetti-company.com/bg/</website>
+      <numSeats>80</numSeats>
+      <priceCategory>$$</priceCategory>
+      <types>
+        <type>Италианска</type>
+        <type>Българска</type>
+        <type>Гурме</type>
+        <type>Европейска</type>
+        <type>Средиземноморска</type>
+      </types>
+      <services>
+        <service>Wi Fi</service>
+        <service>Паркинг</service>
+        <service>Безкасово плащане</service>
+        <service>Климатик</service>
+        <service>Градина/ тераса</service>
+      </services>
+    </restaurant>
+    <restaurant>
+      <id>4</id>
+      <name>GUSTO Ristorante &amp; Pizza</name>
+      <city>Пловдив</city>
+      <cityId>2</cityId>
+      <address>ул. "Отец Паисий" 26</address>
+      <phone>032 623 711</phone>
+      <website href="http://www.gustobg.com/">http://www.gustobg.com/</website>
+      <numSeats>100</numSeats>
+      <priceCategory>$$</priceCategory>
+      <types>
+        <type>Италианска</type>
+        <type>Българска</type>
+        <type>Европейска</type>
+      </types>
+      <services>
+        <service>Wi Fi</service>
+        <service>Паркинг</service>
+        <service>Безкасово плащане</service>
+        <service>Климатик</service>
+        <service>Градина/ тераса</service>
+      </services>
+    </restaurant>
+    <restaurant>
+      <id>5</id>
+      <name>ЗЛАТНА РИБКА</name>
+      <city>Бургас</city>
+      <cityId>3</cityId>
+      <address>ул. "Цар Симеон І " 3</address>
+      <phone>088 986 5555</phone>
+      <numSeats>120</numSeats>
+      <priceCategory>$$</priceCategory>
+      <types>
+        <type>Италианска</type>
+        <type>Българска</type>
+        <type>Гурме</type>
+        <type>Европейска</type>
+        <type>Средиземноморска</type>
+        <type>Рибни специалитети</type>
+        <type>Стек Специалитети</type>
+      </types>
+      <services>
+        <service>Wi Fi</service>
+        <service>Паркинг</service>
+        <service>Безкасово плащане</service>
+        <service>Климатик</service>
+        <service>Градина/ тераса</service>
+      </services>
+    </restaurant>
+    <restaurant>
+      <id>6</id>
+      <name>НЕПТУН</name>
+      <city>Бургас</city>
+      <cityId>3</cityId>
+      <address>Централен плаж</address>
+      <phone>087 810 1788</phone>
+      <website href="http://www.neptunburgas.com/">http://www.neptunburgas.com/</website>
+      <numSeats>140</numSeats>
+      <priceCategory>$$</priceCategory>
+      <types>
+        <type>Българска</type>
+        <type>Европейска</type>
+        <type>Средиземноморска</type>
+        <type>Рибни специалитети</type>
+      </types>
+      <services>
+        <service>Wi Fi</service>
+        <service>Паркинг</service>
+        <service>Климатик</service>
+        <service>Детски кът</service>
+      </services>
+    </restaurant>
+    <restaurant>
+      <id>7</id>
+      <name>Bar &amp; Gelato RAFFY Тракия Пловдив</name>
+      <chainName>RAFFY</chainName>
+      <chainId>2</chainId>
+      <city>Пловдив</city>
+      <cityId>2</cityId>
+      <address>ул. "Съединение" 51А, Тракия</address>
+      <phone>088 355 5589</phone>
+      <website href="https://raffyplovdiv.bg/">https://raffyplovdiv.bg/</website>
+      <numSeats>500</numSeats>
+      <priceCategory>$$</priceCategory>
+      <types>
+        <type>Българска</type>
+        <type>Италианска</type>
+        <type>Европейска</type>
+        <type>Суши</type>
+      </types>
+      <services>
+        <service>Wi Fi</service>
+        <service>Паркинг</service>
+        <service>Безкасово плащане</service>
+        <service>Климатик</service>
+        <service>Градина/ тераса</service>
+        <service>Жива музика/ DJ</service>
+      </services>
+    </restaurant>
+    <restaurant>
+      <id>8</id>
+      <name>RAFFY Bar &amp; Gelato Благоевград</name>
+      <chainName>RAFFY</chainName>
+      <chainId>2</chainId>
+      <city>Благоевград</city>
+      <cityId>4</cityId>
+      <address>ул. "Тракия" 1</address>
+      <phone>089 671 6132</phone>
+      <website href="http://www.raffy.bg/bg/raffy-bar-and-gelato-blagoevgrad">http://www.raffy.bg/bg/raffy-bar-and-gelato-blagoevgrad</website>
+      <numSeats>120</numSeats>
+      <priceCategory>$$</priceCategory>
+      <types>
+        <type>Българска</type>
+        <type>Италианска</type>
+        <type>Средиземноморска</type>
+        <type>Европейска</type>
+        <type>Суши</type>
+      </types>
+      <services>
+        <service>Wi Fi</service>
+        <service>Безкасово плащане</service>
+        <service>Климатик</service>
+        <service>Жива музика/ DJ</service>
+      </services>
+    </restaurant>
+    <restaurant>
+      <id>9</id>
+      <name>Bar &amp; Dinner BESO</name>
+      <city>София</city>
+      <cityId>1</cityId>
+      <address>ул. „Тодор Каблешков“ 45</address>
+      <phone>089 922 2444</phone>
+      <website href="https://beso.bg/">https://beso.bg/</website>
+      <numSeats>550</numSeats>
+      <priceCategory>$$</priceCategory>
+      <types>
+        <type>Българска</type>
+        <type>Рибни специалитети</type>
+        <type>Стек Специалитети</type>
+        <type>Суши</type>
+        <type>BBQ</type>
+      </types>
+      <services>
+        <service>Wi Fi</service>
+        <service>Паркинг</service>
+        <service>Безкасово плащане</service>
+        <service>Климатик</service>
+        <service>Градина/ тераса</service>
+        <service>Жива музика/ DJ</service>
+      </services>
+    </restaurant>
+    <restaurant>
+      <id>10</id>
+      <name>SOCIAL CAFE BAR &amp; KITCHEN</name>
+      <chainName>SOCIAL CAFE</chainName>
+      <chainId>3</chainId>
+      <city>София</city>
+      <cityId>1</cityId>
+      <address>бул. "Витоша" 16</address>
+      <phone>087 676 7647</phone>
+      <website href="http://socialcafe.bg/">http://socialcafe.bg/</website>
+      <numSeats>250</numSeats>
+      <priceCategory>$$</priceCategory>
+      <types>
+        <type>Българска</type>
+        <type>Италианска</type>
+        <type>Европейска</type>
+      </types>
+      <services>
+        <service>Wi Fi</service>
+        <service>Паркинг</service>
+        <service>Безкасово плащане</service>
+        <service>Климатик</service>
+        <service>Градина/ тераса</service>
+        <service>Жива музика/ DJ</service>
+      </services>
+    </restaurant>
+  </restaurantList>
+  <chainList>
+    <chain>
+      <chainName>SPAGHETTI COMPANY</chainName>
+      <chainRef nameRef="SPAGHETTI COMPANY" idRef="1" />
+    </chain>
     <chain>
       <chainName>RAFFY</chainName>
       <restaurant nameRef="RAFFY" idRef="2" />
@@ -290,12 +268,12 @@
       <chainName>SOCIAL CAFE</chainName>
       <restaurant nameRef="SOCIAL CAFE" idRef="3" />
     </chain>
-	</chainList>
-	<cityList>
-		<cityInfo>
-			<cityName>София</cityName>
-			<city regRef="София" regIdRef="1" />
-		</cityInfo>
+  </chainList>
+  <cityList>
+    <cityInfo>
+      <cityName>София</cityName>
+      <city regRef="София" regIdRef="1" />
+    </cityInfo>
     <cityInfo>
       <cityName>Пловдив</cityName>
       <city regRef="Пловдив" regIdRef="2" />
@@ -308,5 +286,5 @@
       <cityName>София</cityName>
       <city regRef="Благоевград" regIdRef="4" />
     </cityInfo>
-	</cityList>
+  </cityList>
 </restaurantsInBG>

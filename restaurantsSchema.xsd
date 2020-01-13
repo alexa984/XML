@@ -7,9 +7,9 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="restaurant">
-                <xs:complexType>
+                <!--<xs:complexType>
 									<xs:sequence>
-                    <xs:element name="restaurantInformation">
+                    <xs:element name="restaurantInformation">-->
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="id" type="xs:integer" />
@@ -56,9 +56,9 @@
 													</xs:element>
 												</xs:sequence>
 											</xs:complexType>
-										</xs:element>
+										<!--</xs:element>
 									</xs:sequence>
-								</xs:complexType>
+								</xs:complexType>-->
 							</xs:element>
 						</xs:sequence>
 					</xs:complexType>
