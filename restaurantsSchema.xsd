@@ -29,7 +29,7 @@
 															</xs:simpleContent>
 														</xs:complexType>
 													</xs:element>
-                          <xs:element name="numSeats" type="xs:element" />
+                          <xs:element name="numSeats" type="xs:integer" />
                           <xs:element name="priceCategory">
                             <xs:simpleType>
                               <xs:restriction base="xs:string">

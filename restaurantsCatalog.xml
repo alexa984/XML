@@ -280,7 +280,7 @@
 	<chainList>
 		<chain>
 			<chainName>SPAGHETTI COMPANY</chainName>
-			<restaurant nameRef="SPAGHETTI COMPANY" idRef="1" />
+			<chainRef nameRef="SPAGHETTI COMPANY" idRef="1" />
 		</chain>
     <chain>
       <chainName>RAFFY</chainName>
