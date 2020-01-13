@@ -10,6 +10,30 @@
 
         <link rel="stylesheet" type="text/css" href="style.css" />
       </head>
+      <script>
+        function showRestaurants() {
+        document.getElementById('restaurantsContainer').style.display = 'inline';
+        document.getElementById('chainsContainer').style.display = 'none';
+        console.log("Ïn show restaurants");
+        };
+        function showChains() {
+        document.getElementById('restaurantsContainer').style.display = 'none';
+        document.getElementById('chainsContainer').style.display = 'inline';
+        console.log("Ïn show chains");
+        };
+        function showTypes() {
+        document.getElementById('restaurantsContainer').style.display = 'none';
+        document.getElementById('chainsContainer').style.display = 'none';
+        document.getElementById('typesContainer').style.display = 'inline';
+        document.getElementById('citiesContainer').style.display = 'none';
+        }
+        function showCities() {
+        document.getElementById('restaurantsContainer').style.display = 'none';
+        document.getElementById('chainsContainer').style.display = 'none';
+        document.getElementById('typesContainer').style.display = 'none';
+        document.getElementById('citiesContainer').style.display = 'inline';
+        }
+      </script>
       <body>
         <h1> Ресторанти в България</h1>
         <button class="button" onclick="showRestaurants();">
@@ -26,52 +50,27 @@
           Градове
         </button>
         <xsl:apply-templates/>
-        <script>
-          function showRestaurants() {
-          document.getElementById('restaurantsContainer').style.display = 'inline';
-          document.getElementById('chainsContainer').style.display = 'none';
-          document.getElementById('typesContainer').style.display = 'none';
-          document.getElementById('citiesContainer').style.display = 'none';
-          };
-          function showChains() {
-          document.getElementById('restaurantsContainer').style.display = 'none';
-          document.getElementById('chainsContainer').style.display = 'inline';
-          document.getElementById('typesContainer').style.display = 'none';
-          document.getElementById('citiesContainer').style.display = 'none';
-          };
-          function showTypes() {
-          document.getElementById('restaurantsContainer').style.display = 'none';
-          document.getElementById('chainsContainer').style.display = 'none';
-          document.getElementById('typesContainer').style.display = 'inline';
-          document.getElementById('citiesContainer').style.display = 'none';
-          }
-          function showCities() {
-          document.getElementById('restaurantsContainer').style.display = 'none';
-          document.getElementById('chainsContainer').style.display = 'none';
-          document.getElementById('typesContainer').style.display = 'none';
-          document.getElementById('citiesContainer').style.display = 'inline';
-          }
-        </script>
       </body>
     </html>
   </xsl:template>
 
 
-  <xsl:template match="/restaurantsCatalog/restaurantsList">
+  <xsl:template match="/restaurantsCatalog/restaurantList">
     <div id="restaurantsContainer">
-      <xsl:for-each select="/restaurantsCatalog/restaurantsList/restaurant[id &lt; 11]">
+      <xsl:for-each select="/restaurantsCatalog/restaurantList/restaurant[id &lt; 11]">
         <xsl:sort
 					select="numSeats"
 					data-type="number"
 					order="descending"/>
 
         <div style="color:white;" class="restaurant">
+          <div class="presentation">
+            <p id="restaurantName">
+              <xsl:value-of select="name"/>
+            </p>
+            <img src="images/{id}.png"/>
+          </div>
 
-          <img src="images/{id}.jpg"/>
-
-          <p id="restaurantName">
-            <xsl:value-of select="name"/>
-          </p>
 
           <div id="restaurantDetail">
             <p id="label" >Град</p>
@@ -119,31 +118,31 @@
     </div>
   </xsl:template>
 
+
   <xsl:template match="/restaurantsCatalog/chainList">
     <div id="chainsContainer" style="display:none;">
       <xsl:for-each select="/restaurantsCatalog/chainList/chainInfo">
         <xsl:variable name="chainName">
-          <xsl:value-of select="chainInfo/@chainNameRef"/>
+          <xsl:value-of select="chain/@chainNameRef"/>
         </xsl:variable>
         <xsl:variable name="chainId">
-          <xsl:value-of select="chainInfo/@chainIdRef"/>
+          <xsl:value-of select="chain/@chainIdRef"/>
         </xsl:variable>
 
-        <div style="color:white;" class="chain">
-          <div>
-            <p id="chainLabel">
-              <xsl:value-of select="chainName"/>
-            </p>
-          </div>
-          <div>
-            <xsl:for-each select="/restaurantCatalog/restaurantList/restaurant[chainName = $chainName and chainId = $chainId]">
+        <div style="color:white;" class="chains">
 
-              <div style="color:white;" class="chainBox">
-                <img src="images/{id}.jpg"/>
+          <p id="chainLabel">
+            <xsl:value-of select="chainName"/>
+          </p>
+          <div>
+            <xsl:for-each select="/restaurantsCatalog/restaurantList/restaurant[chainId = $chainId]">
+
+              <div style="color:white;" class="boxView">
 
                 <p id="restaurantName">
                   <xsl:value-of select="name"/>
                 </p>
+                <img src="images/{id}.jpg"/>
 
                 <div id="restaurantDetail">
                   <p id="label" >Град</p>
@@ -186,75 +185,14 @@
                   </div>
                 </div>
 
-
               </div>
+
             </xsl:for-each>
           </div>
         </div>
       </xsl:for-each>
     </div>
   </xsl:template>
-  <!-- 
-<xsl:template match="/unisInBG/regionList">
-    <div id="regionContainer" style="display:none;">
-  		<xsl:for-each select="/unisInBG/regionList/regionInfo">
-				<xsl:variable name="rName"><xsl:value-of select="regionName"/></xsl:variable>
-				<xsl:variable name="rId"><xsl:value-of select="reg/@regIdRef"/></xsl:variable>
 
-		<div style="color:white;" class="region">
-
-				<p id="regionLabel"><xsl:value-of select="regionName"/></p>
-					<div>
-						<xsl:for-each select="/unisInBG/universityList/university/uniInformation[regionId = $rId]">
-															
-									<div style="color:white;" class="specialRegion">
-									
-										<img src="images/{id}.jpg"/>
-
-										<p id="uniName"><xsl:value-of select="name"/></p>
-										<xsl:if test="branchName">
-											<p id="branchName"><xsl:value-of select="branchName"/></p>
-										</xsl:if>
-										<div id="regInfo">
-											<p id="label" >Седалище</p>
-											<p><xsl:value-of select="location"/></p>
-											<p id="label" >Година</p>
-											<p><xsl:value-of select="year"/></p>
-										<xsl:if test="students">
-											<p id="label" >Студенти</p>
-											<p><xsl:value-of select="students"/></p>
-										</xsl:if>
-										</div>
-										<div id="uniContacts">
-											<p id="label" >Тел</p>
-											<p><xsl:value-of select="telephone"/></p>
-										<xsl:if test="telephoneExtra">
-											<p id="label" >Доп.тел</p>
-											<p><xsl:value-of select="telephoneExtra"/></p>
-										</xsl:if>
-										<xsl:if test="site">
-											<p id="label" >Сайт</p>
-											<a href="{site/@href}"><xsl:value-of select="site"/></a>
-										</xsl:if>
-										</div>
-					
-										<div class="dropdown">
-											<p id="label">Факултети</p>
-											<div class="dropdown-content">
-												<xsl:for-each select="../facultyList/faculty">
-													<p id="faculty"><xsl:value-of select="."/></p>
-												</xsl:for-each>
-											</div>
-										</div>
-									</div>
-
-						</xsl:for-each>
-					</div>
-		</div>
-		</xsl:for-each>
-	</div>
-</xsl:template> -->
-
-  <!--</body>-->
 </xsl:stylesheet>
 
