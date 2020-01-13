@@ -7,7 +7,7 @@
     <html>
       <head>
         <title>Каталог Ресторанти</title>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
         <link rel="stylesheet" type="text/css" href="style.css" />
       </head>
       <script>
@@ -36,6 +36,7 @@
       </script>
       <body>
         <h1> Ресторанти в България</h1>
+        <div id="menu">
         <button class="button" onclick="showRestaurants();">
           Ресторанти
         </button>
@@ -49,6 +50,7 @@
         <button class="button" onclick="showCities()">
           Градове
         </button>
+          </div>
         <xsl:apply-templates/>
       </body>
     </html>
@@ -56,15 +58,16 @@
 
 
   <xsl:template match="/restaurantsCatalog/restaurantList">
-    <div id="restaurantsContainer">
+    <div id="restaurantsContainer" class="container">
+      <div class="row">
       <xsl:for-each select="/restaurantsCatalog/restaurantList/restaurant[id &lt; 11]">
         <xsl:sort
 					select="numSeats"
 					data-type="number"
 					order="descending"/>
-
-        <div style="color:white;" class="restaurant">
-          <div class="presentation">
+        
+        <div style="color:white;" class="restaurant col-md-8 container">
+          <div class="presentation col-md-4">
             <p id="restaurantName">
               <xsl:value-of select="name"/>
             </p>
@@ -72,7 +75,7 @@
           </div>
 
 
-          <div id="restaurantDetail">
+          <div id="restaurantDetail" class="col-md-3">
             <p id="label" >Град</p>
             <p>
               <xsl:value-of select="city"/>
@@ -90,7 +93,7 @@
               <xsl:value-of select="numSeats"/>
             </p>
           </div>
-          <div id="extraInfo">
+          <div id="extraInfo" class="col-md-3">
             <p id="label" >Уебсайт</p>
             <p>
               <a href="{website/@href}">
@@ -102,7 +105,7 @@
               <xsl:value-of select="priceCategory"/>
             </p>
           </div>
-          <div class="dropdown">
+          <div class="dropdown col-md-2">
             <p id="label">Типове кухня</p>
             <div class="dropdown-content">
               <xsl:for-each select="../types/type">
@@ -115,6 +118,7 @@
 
         </div>
       </xsl:for-each>
+        </div>
     </div>
   </xsl:template>
 
