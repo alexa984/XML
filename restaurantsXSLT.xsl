@@ -99,56 +99,51 @@
   		</xsl:for-each>
   	</div>
   </xsl:template>
-<!-- 
-<xsl:template match="/restaurantsCatalog/chainList">
-    <div id="chainContainer" style="display:none;">
-  		<xsl:for-each select="/restaurantsCatalog/chainList/chain">
-				<xsl:variable name="sName"><xsl:value-of select="seatName"/></xsl:variable>
-				<xsl:variable name="sId"><xsl:value-of select="uni/@idRef"/></xsl:variable>
 
-		<div style="color:white;" class="branch">
-		<div>
-						<p id="seatLabel"><xsl:value-of select="seatName"/>
-						</p>
+<xsl:template match="/restaurantsCatalog/chainList">
+    <div id="chainsContainer" style="display:none;">
+  		<xsl:for-each select="/restaurantsCatalog/chainList/chainInfo">
+				<xsl:variable name="chainName"><xsl:value-of select="chainInfo/@chainNameRef"/></xsl:variable>
+				<xsl:variable name="chainId"><xsl:value-of select="chainInfo/@chainIdRef"/></xsl:variable>
+
+			<div style="color:white;" class="chain">
+					<div>
+						<p id="chainLabel"><xsl:value-of select="chainName"/></p>
 					</div>
 					<div>
-						<xsl:for-each select="/unisInBG/universityList/university/uniInformation[name =$sName and id != $sId]">
-															
-									<div style="color:white;" class="specialBranch">
+						<xsl:for-each select="/restaurantCatalog/restaurantList/restaurant[chainName = $chainName and chainId = $chainId]">
+
+									<div style="color:white;" class="chainBox">
 										<img src="images/{id}.jpg"/>
-										
-										<p id="branchName"><xsl:value-of select="branchName"/></p>
-				
-										<div id="branchInfo">
-											<p id="label" >Седалище</p>
-											<p><xsl:value-of select="location"/></p>
-											<p id="label" >Регион</p>
-											<p><xsl:value-of select="region"/></p>
-											<p id="label" >Година</p>
-											<p><xsl:value-of select="year"/></p>
-										</div>
-										<div id="branchContacts">
-											<p id="label" >Тел</p>
-											<p><xsl:value-of select="telephone"/></p>
-										<xsl:if test="telephoneExtra">
-											<p id="label" >Доп.тел</p>
-											<p><xsl:value-of select="telephoneExtra"/></p>
-										</xsl:if>
-										<xsl:if test="site">
-											<p id="label" >Сайт</p>
-											<a href="{site/@href}"><xsl:value-of select="site"/></a>
-										</xsl:if>
-										</div>
+
+					<p id="restaurantName"><xsl:value-of select="name"/></p>
 					
-										<div class="dropdown">
-											<p id="label">Факултети</p>
-											<div class="dropdown-content">
-												<xsl:for-each select="../facultyList/faculty">
-													<p id="faculty"><xsl:value-of select="."/></p>
-												</xsl:for-each>
-											</div>
-										</div>
-									</div>
+					<div id="restaurantDetail">
+						<p id="label" >Град</p>
+						<p><xsl:value-of select="city"/></p>
+						<p id="label">Адрес</p>
+						<p><xsl:value-of select="address"/></p>
+						<p id="label">Телефон</p>
+						<p><xsl:value-of select="phone"/></p>
+						<p id="label">Брой места</p>
+						<p><xsl:value-of select="numSeats"/></p>
+					</div>
+					<div id="extraInfo">
+						<p id="label" >Уебсайт</p>
+						<p><a href="{website/@href}"><xsl:value-of select="website"/></a></p>
+						<p id="label" >Ценова категория</p>
+						<p><xsl:value-of select="priceCategory"/></p>
+					</div>
+					<div class="dropdown">
+						<p id="label">Типове кухня</p>
+						<div class="dropdown-content">
+							<xsl:for-each select="../types/type">
+								<p id="type"><xsl:value-of select="."/></p>
+							</xsl:for-each>
+						</div>
+					</div>
+							
+										
 
 						</xsl:for-each>
 					</div>
@@ -156,7 +151,7 @@
 		</xsl:for-each>
 	</div>
 </xsl:template>
-
+<!-- 
 <xsl:template match="/unisInBG/regionList">
     <div id="regionContainer" style="display:none;">
   		<xsl:for-each select="/unisInBG/regionList/regionInfo">
