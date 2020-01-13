@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="restaurantsXSLT.xsl"?>
-<restaurantsInBG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="restaurantsSchema.xsd">
+<restaurantsCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="restaurantsSchema.xsd">
   <restaurantList>
     <restaurant>
       <id>1</id>
@@ -256,35 +256,14 @@
     </restaurant>
   </restaurantList>
   <chainList>
-    <chain>
-      <chainName>SPAGHETTI COMPANY</chainName>
-      <chainRef nameRef="SPAGHETTI COMPANY" idRef="1" />
-    </chain>
-    <chain>
-      <chainName>RAFFY</chainName>
-      <restaurant nameRef="RAFFY" idRef="2" />
-    </chain>
-    <chain>
-      <chainName>SOCIAL CAFE</chainName>
-      <restaurant nameRef="SOCIAL CAFE" idRef="3" />
-    </chain>
+    <chainInfo chainNameRef="SPAGHETTI COMPANY" chainIdRef="1" />
+    <chainInfo chainNameRef="RAFFY" chainIdRef="2" />
+    <chainInfo chainNameRef="SOCIAL CAFE" chainIdRef="3" />
   </chainList>
   <cityList>
-    <cityInfo>
-      <cityName>София</cityName>
-      <city regRef="София" regIdRef="1" />
-    </cityInfo>
-    <cityInfo>
-      <cityName>Пловдив</cityName>
-      <city regRef="Пловдив" regIdRef="2" />
-    </cityInfo>
-    <cityInfo>
-      <cityName>Бургас</cityName>
-      <city regRef="Бургас" regIdRef="3" />
-    </cityInfo>
-    <cityInfo>
-      <cityName>София</cityName>
-      <city regRef="Благоевград" regIdRef="4" />
-    </cityInfo>
+    <cityInfo cityRef="София" cityIdRef="1" />
+    <cityInfo cityRef="Пловдив" cityIdRef="2" />
+    <cityInfo cityRef="Бургас" cityIdRef="3" />
+    <cityInfo cityRef="Благоевград" cityIdRef="4" />
   </cityList>
-</restaurantsInBG>
+</restaurantsCatalog>

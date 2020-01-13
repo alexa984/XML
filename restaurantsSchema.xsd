@@ -7,129 +7,112 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="restaurant">
-                <!--<xs:complexType>
-									<xs:sequence>
-                    <xs:element name="restaurantInformation">-->
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="id" type="xs:integer" />
-                          <xs:element name="name" type="xs:string" />
-                          <xs:element name="chainName" type="xs:string" minOccurs="0" />
-                          <xs:element name="chainId" type="xs:integer" />
-													<xs:element name="city" type="xs:string" />
-                          <xs:element name="cityId" type="xs:integer" />
-                          <xs:element name="address" type="xs:string" />
-                          <xs:element name="phone" type="xs:string" />
-                          <xs:element name="website" minOccurs="0">
-                            <xs:complexType>
-                              <xs:simpleContent>
-                                <xs:extension base="xs:string">
-                                  <xs:attribute ref="href" use="optional" />
-																</xs:extension>
-															</xs:simpleContent>
-														</xs:complexType>
-													</xs:element>
-                          <xs:element name="numSeats" type="xs:integer" />
-                          <xs:element name="priceCategory">
-                            <xs:simpleType>
-                              <xs:restriction base="xs:string">
-                                <xs:enumeration value="$" />
-                                <xs:enumeration value="$$" />
-                                <xs:enumeration value="$$$" />
-                                <xs:enumeration value="$$$$" />
-															</xs:restriction>
-														</xs:simpleType>
-													</xs:element>
-                          <xs:element name="types">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="type" type="xs:string" maxOccurs="unbounded" />
-															</xs:sequence>
-														</xs:complexType>
-													</xs:element>
-                          <xs:element name="services">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="service" type="xs:string" maxOccurs="unbounded" />
-															</xs:sequence>
-														</xs:complexType>
-													</xs:element>
-												</xs:sequence>
-											</xs:complexType>
-										<!--</xs:element>
-									</xs:sequence>
-								</xs:complexType>-->
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-        <xs:element name="chainList" maxOccurs="1">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="chain" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="restaurant" maxOccurs="1">
+                    <xs:element name="id" type="xs:integer" />
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="chainName" type="xs:string" minOccurs="0" />
+                    <xs:element name="chainId" type="xs:integer" />
+                    <xs:element name="city" type="xs:string" />
+                    <xs:element name="cityId" type="xs:integer" />
+                    <xs:element name="address" type="xs:string" />
+                    <xs:element name="phone" type="xs:string" />
+                    <xs:element name="website" minOccurs="0">
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:string">
-                            <xs:attribute type="xs:string" name="nameRef" />
-                            <xs:attribute type="xs:integer" name="idRef" />
-													</xs:extension>
-												</xs:simpleContent>
-											</xs:complexType>
-										</xs:element>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<!-- TODO: check how to correctly reference cities and chains -->
+                            <xs:attribute ref="href" use="optional" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="numSeats" type="xs:integer" />
+                    <xs:element name="priceCategory">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="$" />
+                          <xs:enumeration value="$$" />
+                          <xs:enumeration value="$$$" />
+                          <xs:enumeration value="$$$$" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="types">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="type" type="xs:string" maxOccurs="unbounded" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="services">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="service" type="xs:string" maxOccurs="unbounded" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="chainList" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <!--<xs:element name="chain" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>-->
+              <xs:element name="chainInfo" maxOccurs="1">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="chainNameRef" />
+                      <xs:attribute type="xs:integer" name="chainIdRef" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
         <xs:element name="cityList" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="cityInfo" maxOccurs="unbounded">
                 <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="cityName" type="xs:string" />
-                    <xs:element name="city" maxOccurs="1">
-                      <xs:complexType>
-                        <xs:simpleContent>
-                          <xs:extension base="xs:string">
-                            <xs:attribute type="xs:string" name="cityRef" />
-                            <xs:attribute type="xs:integer" name="cityIdRef" />
-													</xs:extension>
-												</xs:simpleContent>
-											</xs:complexType>
-										</xs:element>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence>
-		</xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="cityRef" />
+                      <xs:attribute type="xs:integer" name="cityIdRef" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
     <xs:key name="chainKey">
-      <xs:selector xpath="restaurants/restaurantList/restaurant/restaurantInformation" />
-      <xs:field xpath="name" />
-      <xs:field xpath="id" />
-		</xs:key>
-		<xs:keyref name="chainRef" refer="chainKey">
-      <xs:selector xpath="restaurants/chainList/chain/restaurant" />
-      <xs:field xpath="@nameRef" />
-      <xs:field xpath="@idRef" />
-		</xs:keyref>
-      <xs:key name="cityKey">
-        <xs:selector xpath="restaurants/restaurantList/restaurant/restaurantInformation" />
-        <xs:field xpath="city" />
-        <xs:field xpath="cityId" />
-		</xs:key>
+      <xs:selector xpath="restaurants/restaurantList/restaurant" />
+      <xs:field xpath="chainName" />
+      <xs:field xpath="chainId" />
+    </xs:key>
+    <xs:keyref name="chainRef" refer="chainKey">
+      <xs:selector xpath="restaurants/chainList/chainInfo" />
+      <xs:field xpath="@chainNameRef" />
+      <xs:field xpath="@chainIdRef" />
+    </xs:keyref>
+    <xs:key name="cityKey">
+      <xs:selector xpath="restaurants/restaurantList/restaurant" />
+      <xs:field xpath="city" />
+      <xs:field xpath="cityId" />
+    </xs:key>
     <xs:keyref name="cityRef" refer="cityKey">
-      <xs:selector xpath="restaurants/cityList/cityInfo/city" />
+      <xs:selector xpath="restaurants/cityList/cityInfo" />
       <xs:field xpath="@cityRef" />
       <xs:field xpath="@cityIdRef" />
-		</xs:keyref>
-	</xs:element>
+    </xs:keyref>
+  </xs:element>
 </xs:schema>
