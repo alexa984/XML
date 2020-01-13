@@ -26,6 +26,32 @@
 			Градове
   	</button>
        <xsl:apply-templates/>
+    <script>
+      function showRestaurants() {
+      document.getElementById('restaurantsContainer').style.display = 'inline';
+      document.getElementById('chainsContainer').style.display = 'none';
+      document.getElementById('typesContainer').style.display = 'none';
+      document.getElementById('citiesContainer').style.display = 'none';
+      };
+      function showChains() {
+      document.getElementById('restaurantsContainer').style.display = 'none';
+      document.getElementById('chainsContainer').style.display = 'inline';
+      document.getElementById('typesContainer').style.display = 'none';
+      document.getElementById('citiesContainer').style.display = 'none';
+      };
+      function showTypes() {
+      document.getElementById('restaurantsContainer').style.display = 'none';
+      document.getElementById('chainsContainer').style.display = 'none';
+      document.getElementById('typesContainer').style.display = 'inline';
+      document.getElementById('citiesContainer').style.display = 'none';
+      }
+      function showCities() {
+      document.getElementById('restaurantsContainer').style.display = 'none';
+      document.getElementById('chainsContainer').style.display = 'none';
+      document.getElementById('typesContainer').style.display = 'none';
+      document.getElementById('citiesContainer').style.display = 'inline';
+      }
+    </script>
     </body></html>
   </xsl:template>
 
@@ -191,32 +217,7 @@
 		</xsl:for-each>
 	</div>
 </xsl:template> -->
-<script>
-		function showRestaurants() {
-			document.getElementById('restaurantsContainer').style.display = 'inline';
-            document.getElementById('chainsContainer').style.display = 'none';
-			document.getElementById('typesContainer').style.display = 'none';
-			document.getElementById('citiesContainer').style.display = 'none';
-    };
-		function showChains() {
-            document.getElementById('restaurantsContainer').style.display = 'none';
-            document.getElementById('chainsContainer').style.display = 'inline';
-			document.getElementById('typesContainer').style.display = 'none';
-			document.getElementById('citiesContainer').style.display = 'none';
-    };
-		function showTypes() {
-            document.getElementById('restaurantsContainer').style.display = 'none';
-            document.getElementById('chainsContainer').style.display = 'none';
-			document.getElementById('typesContainer').style.display = 'inline';
-			document.getElementById('citiesContainer').style.display = 'none';
-    }
-	function showCities() {
-            document.getElementById('restaurantsContainer').style.display = 'none';
-            document.getElementById('chainsContainer').style.display = 'none';
-			document.getElementById('typesContainer').style.display = 'none';
-			document.getElementById('citiesContainer').style.display = 'inline';
-    }
-  </script>
-</body>
+
+<!--</body>-->
 </xsl:stylesheet>
 
