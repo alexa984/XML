@@ -10,32 +10,6 @@
 
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
-	<script>
-		function showRestaurants() {
-			document.getElementById('restaurantsContainer').style.display = 'inline';
-            document.getElementById('chainsContainer').style.display = 'none';
-			document.getElementById('typesContainer').style.display = 'none';
-			document.getElementById('citiesContainer').style.display = 'none';
-    };
-		function showChains() {
-            document.getElementById('restaurantsContainer').style.display = 'none';
-            document.getElementById('chainsContainer').style.display = 'inline';
-			document.getElementById('typesContainer').style.display = 'none';
-			document.getElementById('citiesContainer').style.display = 'none';
-    };
-		function showTypes() {
-            document.getElementById('restaurantsContainer').style.display = 'none';
-            document.getElementById('chainsContainer').style.display = 'none';
-			document.getElementById('typesContainer').style.display = 'inline';
-			document.getElementById('citiesContainer').style.display = 'none';
-    }
-	function showCities() {
-            document.getElementById('restaurantsContainer').style.display = 'none';
-            document.getElementById('chainsContainer').style.display = 'none';
-			document.getElementById('typesContainer').style.display = 'none';
-			document.getElementById('citiesContainer').style.display = 'inline';
-    }
-  </script>
 	<body>
 	<h1> Ресторанти в България</h1>
 	<button class="button" onclick="showRestaurants();">
@@ -100,7 +74,7 @@
   		</xsl:for-each>
   	</div>
   </xsl:template>
-
+<!-- 
 <xsl:template match="/restaurantsCatalog/chainList">
     <div id="chainContainer" style="display:none;">
   		<xsl:for-each select="/restaurantsCatalog/chainList/chain">
@@ -216,6 +190,32 @@
 		</div>
 		</xsl:for-each>
 	</div>
-</xsl:template>
-
+</xsl:template> -->
+<script>
+		function showRestaurants() {
+			document.getElementById('restaurantsContainer').style.display = 'inline';
+            document.getElementById('chainsContainer').style.display = 'none';
+			document.getElementById('typesContainer').style.display = 'none';
+			document.getElementById('citiesContainer').style.display = 'none';
+    };
+		function showChains() {
+            document.getElementById('restaurantsContainer').style.display = 'none';
+            document.getElementById('chainsContainer').style.display = 'inline';
+			document.getElementById('typesContainer').style.display = 'none';
+			document.getElementById('citiesContainer').style.display = 'none';
+    };
+		function showTypes() {
+            document.getElementById('restaurantsContainer').style.display = 'none';
+            document.getElementById('chainsContainer').style.display = 'none';
+			document.getElementById('typesContainer').style.display = 'inline';
+			document.getElementById('citiesContainer').style.display = 'none';
+    }
+	function showCities() {
+            document.getElementById('restaurantsContainer').style.display = 'none';
+            document.getElementById('chainsContainer').style.display = 'none';
+			document.getElementById('typesContainer').style.display = 'none';
+			document.getElementById('citiesContainer').style.display = 'inline';
+    }
+  </script>
+</body>
 </xsl:stylesheet>
