@@ -62,8 +62,7 @@
 				<xsl:sort
 					select="numSeats"
 					data-type="number"
-					order="descending">
-				</xsl:sort>
+					order="descending"/>
 
 				<div style="color:white;" class="restaurant">
 				
