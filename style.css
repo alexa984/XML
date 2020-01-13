@@ -62,7 +62,7 @@ button:focus {
 	position:relative;
 }
 
-.university {
+.restaurant {
     width: 100%;
 	height: 300px;
     margin-bottom: 20px;
@@ -71,7 +71,7 @@ button:focus {
 	border-radius: 15px;
 }
 
-.branch,.region {
+.chain,.city {
     width: 100%;
     margin-bottom: 20px;
 	background-color: #325d81;
@@ -122,13 +122,8 @@ button:focus {
 	padding-top:5px;
 }
 
-#uniName {
+#restaurantName, #chainName {
 	font-size: 35px;
-	display:table-header-group;
-}
-
-#branchName {
-	font-size: 30px;
 	display:table-header-group;
 }
 
@@ -145,7 +140,7 @@ button:focus {
 	margin-bottom: 0px;
 }
 
-#regionLabel {
+#cityLabel {
 	font-size: 50px;
 	font-style:italic;
 	margin-bottom: 0px;
