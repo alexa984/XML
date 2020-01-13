@@ -3,10 +3,10 @@
   <xs:element name="restaurantsCatalog">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="restaurantList" maxOccurs="1">
+        <xs:element name="restaurantList">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="restaurant">
+              <xs:element name="restaurant" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="id" type="xs:integer" />
@@ -21,7 +21,7 @@
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:string">
-                            <xs:attribute ref="href" use="optional" />
+                            <xs:attribute name="href" use="optional" />
                           </xs:extension>
                         </xs:simpleContent>
                       </xs:complexType>
@@ -63,7 +63,7 @@
               <!--<xs:element name="chain" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>-->
-              <xs:element name="chainInfo" maxOccurs="1">
+              <xs:element name="chainInfo" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:simpleContent>
                     <xs:extension base="xs:string">
