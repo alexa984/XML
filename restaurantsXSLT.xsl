@@ -34,9 +34,9 @@
     <div id="restaurantsContainer">
     	<xsl:for-each select="/restaurantsCatalog/restaurantsList/restaurant[id &lt; 11]">
 				<xsl:sort
-					select = "numSeats"
+					select="numSeats"
 					data-type="number"
-					order = "descending">
+					order="descending">
 				</xsl:sort>
 
 				<div style="color:white;" class="restaurant">
@@ -57,7 +57,7 @@
 					</div>
 					<div id="extraInfo">
 						<p id="label" >Уебсайт</p>
-						<p><a href="{website/@href}"><xsl:value-of select="website"></a></p>
+						<p><a href="{website/@href}"><xsl:value-of select="website"/></a></p>
 						<p id="label" >Ценова категория</p>
 						<p><xsl:value-of select="priceCategory"/></p>
 					</div>
@@ -219,3 +219,4 @@
   </script>
 </body>
 </xsl:stylesheet>
+
