@@ -216,5 +216,83 @@
       </div>
   </xsl:template>
 
+  <xsl:template match="/restaurantsCatalog/cityList">
+    <div id="citiesContainer" style="display:none;" class="container">
+      <xsl:for-each select="/restaurantsCatalog/cityList/cityInfo">
+        <div class="restaurant container" style="display:block;">
+
+          <xsl:variable name="cityId" select="@cityIdRef"/>
+
+          <div id="cityLabel" class="row">
+            <xsl:value-of select="@cityRef"/>
+          </div>
+
+          <div class="row container">
+            <xsl:for-each select="/restaurantsCatalog/restaurantList/restaurant[cityId = $cityId]">
+              <div class="row container">
+                <div class="presentation col-md-4">
+                  <p id="restaurantName">
+                    <xsl:value-of select="name"/>
+                  </p>
+                  <xsl:variable name="picName" select="picture/@location"/>
+                  <img src="images/pic{id}.jpg"/>
+                </div>
+
+                <div id="restaurantDetail" class="col-md-3">
+                  <p id="label">Адрес</p>
+                  <p>
+                    <xsl:value-of select="address"/>
+                  </p>
+                  <p id="label">Телефон</p>
+                  <p>
+                    <xsl:value-of select="phone"/>
+                  </p>
+                  <p id="label">Брой места</p>
+                  <p>
+                    <xsl:value-of select="numSeats"/>
+                  </p>
+                </div>
+                <div id="extraInfo" class="col-md-5">
+                  <p id="label" >Уебсайт</p>
+                  <p>
+                    <a href="{website/@href}">
+                      <xsl:value-of select="website"/>
+                    </a>
+                  </p>
+                  <p id="label" >Ценова категория</p>
+                  <p>
+                    <xsl:value-of select="priceCategory"/>
+                  </p>
+                  <div class="dropdown col-md-2">
+                    <p id="label">Типове кухня</p>
+                    <div class="dropdown-content">
+                      <xsl:for-each select="types/type">
+                        <p id="type">
+                          <xsl:value-of select="."/>
+                        </p>
+                      </xsl:for-each>
+                    </div>
+                  </div>
+                  <div class="dropdown col-md-2">
+                    <p id="label">Услуги</p>
+                    <div class="dropdown-content">
+                      <xsl:for-each select="services/service">
+                        <p id="service">
+                          <xsl:value-of select="."/>
+                        </p>
+                      </xsl:for-each>
+                    </div>
+                  </div>
+                </div>
+                <hr/>
+              </div>
+
+            </xsl:for-each>
+          </div>
+        </div>
+      </xsl:for-each>
+    </div>
+  </xsl:template>
+  
 </xsl:stylesheet>
 
