@@ -17,7 +17,7 @@
 
 body {
     background-color: #F1F1F1;
-	font-family: CaviarDreamsRegular;
+    font-family: CaviarDreamsRegular;
 }
 
 h1 {
@@ -67,7 +67,7 @@ button:focus {
     align-content: center;
 }
 
-.restaurant {
+.restaurant, .chain {
     display: flex;
     margin: 2px;
     background-color: #ffd800;
@@ -78,12 +78,21 @@ button:focus {
 
 }
 
-.chain,.city {
+/*.chain,.city {
     width: 100%;
     margin-bottom: 20px;
 	background-color: #ffd800;
 	padding: 0px;
 	border-radius: 15px;
+}*/
+
+#chainLabel {
+    color: #000000;
+    border: 2px;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline;
+    padding-left: 20px;
 }
 
 #label, #restaurantName {

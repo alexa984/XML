@@ -11,6 +11,11 @@
                   <xs:sequence>
                     <xs:element name="id" type="xs:integer" />
                     <xs:element name="name" type="xs:string" />
+                    <xs:element name="picture">
+                      <xs:complexType>
+                        <xs:attribute name="location" type="xs:ENTITY"/>
+                      </xs:complexType>
+                    </xs:element>
                     <xs:element name="chainName" type="xs:string" minOccurs="0" />
                     <xs:element name="chainId" type="xs:integer" minOccurs="0"/>
                     <xs:element name="city" type="xs:string" />

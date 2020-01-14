@@ -5,6 +5,7 @@
     <restaurant>
       <id>1</id>
       <name>SPAGHETTI COMPANY, БЪЛГАРИЯ МОЛ</name>
+      <picture location="pic1"/>
       <chainName>SPAGHETTI COMPANY</chainName>
       <chainId>1</chainId>
       <city>София</city>
@@ -32,6 +33,7 @@
     <restaurant>
       <id>2</id>
       <name>La Terrazza di Serdica</name>
+      <picture location="pic2"/>
       <city>София</city>
       <cityId>1</cityId>
       <address>ул. "Будапеща" 2-4, хотел АРЕНА ДИ СЕРДИКА</address>
@@ -53,6 +55,7 @@
     <restaurant>
       <id>3</id>
       <name>SPAGHETTI COMPANY Бул. "Витоша"</name>
+      <picture location="pic3"/>
       <chainName>SPAGHETTI COMPANY</chainName>
       <chainId>1</chainId>
       <city>София</city>
@@ -80,6 +83,7 @@
     <restaurant>
       <id>4</id>
       <name>GUSTO Ristorante &amp; Pizza</name>
+      <picture location="pic4"/>
       <city>Пловдив</city>
       <cityId>2</cityId>
       <address>ул. "Отец Паисий" 26</address>
@@ -103,6 +107,7 @@
     <restaurant>
       <id>5</id>
       <name>ЗЛАТНА РИБКА</name>
+      <picture location="pic5"/>
       <city>Бургас</city>
       <cityId>3</cityId>
       <address>ул. "Цар Симеон І " 3</address>
@@ -129,6 +134,7 @@
     <restaurant>
       <id>6</id>
       <name>НЕПТУН</name>
+      <picture location="pic6"/>
       <city>Бургас</city>
       <cityId>3</cityId>
       <address>Централен плаж</address>
@@ -152,6 +158,7 @@
     <restaurant>
       <id>7</id>
       <name>Bar &amp; Gelato RAFFY Тракия Пловдив</name>
+      <picture location="pic7"/>
       <chainName>RAFFY</chainName>
       <chainId>2</chainId>
       <city>Пловдив</city>
@@ -179,6 +186,7 @@
     <restaurant>
       <id>8</id>
       <name>RAFFY Bar &amp; Gelato Благоевград</name>
+      <picture location="pic8"/>
       <chainName>RAFFY</chainName>
       <chainId>2</chainId>
       <city>Благоевград</city>
@@ -205,6 +213,7 @@
     <restaurant>
       <id>9</id>
       <name>Bar &amp; Dinner BESO</name>
+      <picture location="pic9"/>
       <city>София</city>
       <cityId>1</cityId>
       <address>ул. „Тодор Каблешков“ 45</address>
@@ -231,6 +240,7 @@
     <restaurant>
       <id>10</id>
       <name>SOCIAL CAFE BAR &amp; KITCHEN</name>
+      <picture location="pic10"/>
       <chainName>SOCIAL CAFE</chainName>
       <chainId>3</chainId>
       <city>София</city>
