@@ -69,8 +69,8 @@
               <p id="restaurantName">
                 <xsl:value-of select="name"/>
               </p>
-              <xsl:variable name="picture" select="@location"/>
-              <img src="images/{picture}.jpg"/>
+              <xsl:variable name="picName" select="picture/@location"/>
+              <img src="images/pic{id}.jpg"/>
             </div>
 
 
@@ -151,8 +151,8 @@
                       <p id="restaurantName">
                         <xsl:value-of select="name"/>
                       </p>
-                      <xsl:variable name="picture" select="@location"/>
-                      <img src="images/{picture}.jpg"/>
+                      <xsl:variable name="picName" select="picture/@location"/>
+                      <img src="images/pic{id}.jpg"/>
                     </div>
 
                     <div id="restaurantDetail">
