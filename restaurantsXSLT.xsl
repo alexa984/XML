@@ -14,21 +14,16 @@
         function showRestaurants() {
         document.getElementById('restaurantsContainer').style.display = 'inline';
         document.getElementById('chainsContainer').style.display = 'none';
+        document.getElementById('citiesContainer').style.display = 'none';
         };
         function showChains() {
         document.getElementById('restaurantsContainer').style.display = 'none';
         document.getElementById('chainsContainer').style.display = 'inline';
-        };
-        function showTypes() {
-        document.getElementById('restaurantsContainer').style.display = 'none';
-        document.getElementById('chainsContainer').style.display = 'none';
-        document.getElementById('typesContainer').style.display = 'inline';
         document.getElementById('citiesContainer').style.display = 'none';
-        }
+        };
         function showCities() {
         document.getElementById('restaurantsContainer').style.display = 'none';
         document.getElementById('chainsContainer').style.display = 'none';
-        document.getElementById('typesContainer').style.display = 'none';
         document.getElementById('citiesContainer').style.display = 'inline';
         }
       </script>
@@ -41,10 +36,6 @@
           </button>
           <button class="button" onclick="showChains()">
             Вериги
-          </button>
-
-          <button class="button" onclick="showTypes()">
-            Видове
           </button>
           <button class="button" onclick="showCities()">
             Градове
@@ -137,7 +128,7 @@
   <xsl:template match="/restaurantsCatalog/chainList">
     <div id="chainsContainer" style="display:none;" class="container">
         <xsl:for-each select="/restaurantsCatalog/chainList/chainInfo">
-          <div class="restaurant container" style="display:block;">
+          <div class="chainlist container" style="display:block;">
           
             <xsl:variable name="chainId" select="@chainIdRef"/>
           
@@ -147,7 +138,7 @@
                 
               <div class="row container">
                 <xsl:for-each select="/restaurantsCatalog/restaurantList/restaurant[chainId = $chainId]">
-                  <div class="row container">
+                  <div class="row container item">
                     <div class="presentation col-md-4">
                       <p id="restaurantName">
                         <xsl:value-of select="name"/>
@@ -206,9 +197,11 @@
                         </div>
                       </div>
                     </div>
-                    <hr/>
+                    
                   </div>
-    
+                  <div class="row line">
+                  <hr/>
+                    </div>
                 </xsl:for-each>
               </div>
 </div>
@@ -219,7 +212,7 @@
   <xsl:template match="/restaurantsCatalog/cityList">
     <div id="citiesContainer" style="display:none;" class="container">
       <xsl:for-each select="/restaurantsCatalog/cityList/cityInfo">
-        <div class="restaurant container" style="display:block;">
+        <div class="city container" style="display:block;">
 
           <xsl:variable name="cityId" select="@cityIdRef"/>
 
@@ -229,7 +222,7 @@
 
           <div class="row container">
             <xsl:for-each select="/restaurantsCatalog/restaurantList/restaurant[cityId = $cityId]">
-              <div class="row container">
+              <div class="row container item">
                 <div class="presentation col-md-4">
                   <p id="restaurantName">
                     <xsl:value-of select="name"/>
@@ -284,7 +277,7 @@
                     </div>
                   </div>
                 </div>
-                <hr/>
+                <hr style="color: black; height: 1px;"/>
               </div>
 
             </xsl:for-each>

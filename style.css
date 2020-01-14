@@ -54,7 +54,7 @@ button:focus {
     font-size: 18px;
     font-weight: bold;
     margin: 4px 2px;
-    width: 24%;
+    width: 30%;
     cursor: pointer;
     position: relative;
 }
@@ -64,7 +64,7 @@ button:focus {
     align-content: center;
 }
 
-.restaurant, .chain {
+.restaurant, .chain, .chainlist, .city {
     display: flex;
     margin: 5px;
     background-color: white;
@@ -77,23 +77,25 @@ button:focus {
     box-shadow: -6px 6px 5px 0px rgba(0,0,0,0.75);
 }
 
-/*.chain,.city {
-    width: 100%;
-    margin-bottom: 20px;
-	background-color: #ffd800;
-	padding: 0px;
-	border-radius: 15px;
-}*/
-
-#chainLabel {
+#chainLabel, #cityLabel {
     color: #000000;
     border: 2px;
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
     text-decoration: underline;
     padding-left: 20px;
 }
 
+hr {
+    color: black;
+    margin: 2px;
+}
+.item {
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px black;
+    padding: 2px;
+}
+ 
 #label, #restaurantName {
     color: #193366;
     display: inline-block;
@@ -119,6 +121,7 @@ button:focus {
         position: relative;
         width: 100%;
         vertical-align: central;
+        margin: 1px;
     }
 
 .dropdown {
@@ -149,17 +152,6 @@ button:focus {
 	margin-left:10px;
 }
 
-#seatLabel {
-	font-size: 40px;
-	margin-bottom: 0px;
-}
-
-#cityLabel {
-	font-size: 50px;
-	font-style:italic;
-	margin-bottom: 0px;
-}
-
 #extraInfo {
 	width: 250px;
 	display: inline-block;
@@ -168,4 +160,9 @@ button:focus {
 	vertical-align: top;
 	overflow: hidden;
 	position:relative;
+}
+
+
+.restaurantsContainer {
+    padding-left: 10px;
 }
