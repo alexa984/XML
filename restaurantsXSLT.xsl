@@ -106,8 +106,18 @@
               <div class="dropdown col-md-2">
                 <p id="label">Типове кухня</p>
                 <div class="dropdown-content">
-                  <xsl:for-each select="../types/type">
+                  <xsl:for-each select="types/type">
                     <p id="type">
+                      <xsl:value-of select="."/>
+                    </p>
+                  </xsl:for-each>
+                </div>
+              </div>
+              <div class="dropdown col-md-2">
+                <p id="label">Услуги</p>
+                <div class="dropdown-content">
+                  <xsl:for-each select="services/service">
+                    <p id="service">
                       <xsl:value-of select="."/>
                     </p>
                   </xsl:for-each>
