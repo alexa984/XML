@@ -34,6 +34,7 @@
       </script>
       <body>
         <h1> Ресторанти в България</h1>
+        <hr/>
         <div id="menu">
           <button class="button" onclick="showRestaurants();">
             Ресторанти
@@ -64,9 +65,9 @@
             data-type="number"
             order="descending"/>
 
-          <div style="color:white;" class="restaurant col-md-8 container">
+          <div style="color:white;" class="restaurant col-lg-12 container">
             <div class="presentation col-md-4">
-              <p id="restaurantName">
+              <p id="restaurantName" style="text-align: center">
                 <xsl:value-of select="name"/>
               </p>
               <xsl:variable name="picName" select="picture/@location"/>
@@ -92,7 +93,7 @@
                 <xsl:value-of select="numSeats"/>
               </p>
             </div>
-            <div id="extraInfo" class="col-md-5">
+            <div id="extraInfo" class="col-md-8">
               <p id="label" >Уебсайт</p>
               <p>
                 <a href="{website/@href}">
@@ -102,9 +103,9 @@
               <p id="label" >Ценова категория</p>
               <p>
                 <xsl:value-of select="priceCategory"/>
-              </p>
+              </p> 
               <div class="dropdown col-md-2">
-                <p id="label">Типове кухня</p>
+                <p id="label">Типове кухня▼</p>
                 <div class="dropdown-content">
                   <xsl:for-each select="types/type">
                     <p id="type">
@@ -114,7 +115,7 @@
                 </div>
               </div>
               <div class="dropdown col-md-2">
-                <p id="label">Услуги</p>
+                <p id="label">Услуги▼</p>
                 <div class="dropdown-content">
                   <xsl:for-each select="services/service">
                     <p id="service">
@@ -147,7 +148,7 @@
               <div class="row container">
                 <xsl:for-each select="/restaurantsCatalog/restaurantList/restaurant[chainId = $chainId]">
                   <div class="row container">
-                    <div class="presentation">
+                    <div class="presentation col-md-4">
                       <p id="restaurantName">
                         <xsl:value-of select="name"/>
                       </p>
@@ -155,7 +156,7 @@
                       <img src="images/pic{id}.jpg"/>
                     </div>
 
-                    <div id="restaurantDetail">
+                    <div id="restaurantDetail" class="col-md-3">
                       <p id="label" >Град</p>
                       <p>
                         <xsl:value-of select="city"/>
@@ -173,7 +174,7 @@
                         <xsl:value-of select="numSeats"/>
                       </p>
                     </div>
-                    <div id="extraInfo">
+                    <div id="extraInfo" class="col-md-5">
                       <p id="label" >Уебсайт</p>
                       <p>
                         <a href="{website/@href}">
@@ -184,20 +185,30 @@
                       <p>
                         <xsl:value-of select="priceCategory"/>
                       </p>
-                    </div>
-                    <div class="dropdown">
-                      <p id="label">Типове кухня</p>
-                      <div class="dropdown-content">
-                        <xsl:for-each select="../types/type">
-                          <p id="type">
-                            <xsl:value-of select="."/>
-                          </p>
-                        </xsl:for-each>
+                      <div class="dropdown col-md-2">
+                        <p id="label">Типове кухня</p>
+                        <div class="dropdown-content">
+                          <xsl:for-each select="types/type">
+                            <p id="type">
+                              <xsl:value-of select="."/>
+                            </p>
+                          </xsl:for-each>
+                        </div>
+                      </div>
+                      <div class="dropdown col-md-2">
+                        <p id="label">Услуги</p>
+                        <div class="dropdown-content">
+                          <xsl:for-each select="services/service">
+                            <p id="service">
+                              <xsl:value-of select="."/>
+                            </p>
+                          </xsl:for-each>
+                        </div>
                       </div>
                     </div>
-
+                    <hr/>
                   </div>
-
+    
                 </xsl:for-each>
               </div>
 </div>
