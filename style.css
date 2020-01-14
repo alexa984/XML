@@ -66,12 +66,15 @@ button:focus {
 
 .restaurant, .chain {
     display: flex;
-    margin: 3px;
+    margin: 5px;
     background-color: white;
-    padding: 0px;
+    padding: 2px;
     border: 1px black;
     border-radius: 15px;
     padding: 1px;
+    -webkit-box-shadow: -6px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -6px 6px 5px 0px rgba(0,0,0,0.75);
 }
 
 /*.chain,.city {
