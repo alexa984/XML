@@ -93,7 +93,7 @@
               <xsl:value-of select="numSeats"/>
             </p>
           </div>
-          <div id="extraInfo" class="col-md-3">
+          <div id="extraInfo" class="col-md-5">
             <p id="label" >Уебсайт</p>
             <p>
               <a href="{website/@href}">
@@ -104,17 +104,18 @@
             <p>
               <xsl:value-of select="priceCategory"/>
             </p>
-          </div>
-          <div class="dropdown col-md-2">
-            <p id="label">Типове кухня</p>
-            <div class="dropdown-content">
-              <xsl:for-each select="../types/type">
-                <p id="type">
-                  <xsl:value-of select="."/>
-                </p>
-              </xsl:for-each>
+            <div class="dropdown col-md-2">
+              <p id="label">Типове кухня</p>
+              <div class="dropdown-content">
+                <xsl:for-each select="../types/type">
+                  <p id="type">
+                    <xsl:value-of select="."/>
+                  </p>
+                </xsl:for-each>
+              </div>
             </div>
           </div>
+   
 
         </div>
       </xsl:for-each>
